@@ -1,23 +1,23 @@
 <img align="right" src="./resources/ludii-logo-64x64.png">
 
-# Ludii AI Competition - CoG 2021
+# Ludii AI Competitions - Computer Games 2022
 
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 [![twitter](https://img.shields.io/twitter/follow/ludiigames?style=social)](https://twitter.com/intent/follow?screen_name=ludiigames)
 
 ## News
-- 1 February 2021: This repository made public.
+- 1 February 2022: This repository made public.
 
 To stay up-to-date with any new announcements about Ludii or the Ludii AI competition, keep an eye out on:
 1. Our twitter: https://twitter.com/ludiigames
 2. Our forums: https://ludii.games/forums/forumdisplay.php?fid=26
 
-**Note: if you are planning to participate, we would appreciate already sending us an email just to inform us of that.**
-This can allows us to get a rough idea of how many submissions to expect.
+**Note: if you plan to participate to any of the tracks, it is necessary to send us an email (ludii.games@gmail.com) to register your participation. The only necessary information are your first and last name, the name of your agent and an email to contact you. It would also really be appreciated if you can register to the Ludii forum and give us your login, but this is not required (https://ludii.games/forums/member.php?action=register). As soon as it would be possible for you, a short description (an abstract) of your agent would also be appreciated if shared with us.**
+
 <!--
 ---
 
-## The CoG 2020 Competition will use Ludii Version 0.9.3
+## The CoG 2022 Competition will use Ludii Version 1.3.2
 
 This repository, as well as the [Ludii Example AI repository](https://github.com/Ludeme/LudiiExampleAI),
 are written for the latest public pre-release of Ludii available at the time of this writing: **Ludii 0.9.3**.
@@ -42,7 +42,7 @@ that will be used for the competition at CoG 2020 at 0.9.3**.
 ---
 
 ## Summary
-The Ludii AI Competition is a **general game playing competition** focussed on developing agents that can play a wide variety of board, card, dice and tile games. This competition will use Ludii, a recently developed general game system, to provide the necessary games and API. Games will be provided in the Ludii .lud game description format. The current version of Ludii includes over 500 games, with new games being added frequently. Submitted agents will play against all other competition entrants on a selected set of 20 games in a round-robin format. These games will not be named or provided to the agents beforehand. Agents will have a set amount of time, typically a few seconds, to make each move. Agents that fail to return a move, or return an illegal move, within this period will have a random move made for them. The agent that achieves the highest average win-rate across all games will win the competition.
+The Ludii AI Competitions are **general game playing competitions** focussed on developing agents that can play a wide variety of board, dice and tile games. This competition will use Ludii, a recently developed general game system, to provide the necessary games and API. Games will be provided in the Ludii .lud game description format. The current version of Ludii includes over 500 games, with new games being added frequently. Submitted agents will play against all other competition entrants on a selected set of 20 games in a round-robin format. These games will not be named or provided to the agents beforehand. Agents will have a set amount of time, typically a few seconds, to make each move. Agents that fail to return a move, or return an illegal move, within this period will have a random move made for them. The agent that achieves the highest average win-rate across all games will win the competition.
 
 A brief tutorial video of how to run an AI agent in Ludii is available at https://www.youtube.com/watch?v=8MhBMEXO8IU
 
@@ -57,7 +57,7 @@ A brief tutorial video of how to run an AI agent in Ludii is available at https:
 - Ludii source code repository: https://github.com/Ludeme/Ludii
 
 ## Important Dates
-- 28 May 2021: Submission deadline for Competition Papers at IEEE CoG 2021: http://ieee-cog.org/2021/cfp  (note that papers about entries to this competition are eligible).
+- 28 May 2021: Submission deadline for Competition Papers at IEEE CoG 2021: http://ieee-cog.org/2021/cfp  (note that papers about entries to this competition are eligible).
 - 27 July 2021: Early submission deadline for agents (we will test agents submitted prior to this date and notify you of any technical issues encountered). Agents can also be submitted before this date for additional testing.
 - 3 August 2021: Final submission deadline for agents.
 - 10 August 2021: Submission deadline for short summary about algorithms / techniques used by the agent.
@@ -117,7 +117,7 @@ To submit an agent, send an email to ludii.games@gmail.com containing:
 - The IEEE CIS Competition Subcommittee has provided $1000USD in prize money.
 - 1st Place will receive $500, 2nd place will receive $300, and 3rd place will receive $200.
 - Each entrant may only win a single prize, and must outperform a baseline UCT agent.
-- The full prize  distribution policy can be found at https://cis.ieee.org/images/files/Documents/competitions/prize-dist-policy.pdf
+- The full prize  distribution policy can be found at https://cis.ieee.org/images/files/Documents/competitions/prize-dist-policy.pdf
 
 ## Contact Info
 The preferred way to contact us with any suggestions or questions about the competition is to use the section for competitions on the Ludii forums (https://ludii.games/forums/forumdisplay.php?fid=26). This also enables other interested people to see the responses.
