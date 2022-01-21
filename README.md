@@ -100,6 +100,13 @@ This API for agents is similar to that used by the planning tracks of the [Gener
 
 
 ## Competition Rules
+
+### Killothon track
+
+### General Game Playing track
+
+### Learning track
+
 <!--
 will play against all other competition entrants on a selected set of 20 games in a round-robin format. These games will not be named or provided to the agents beforehand. Agents will have a set amount of time, typically a few seconds, to make each move. Agents that fail to return a move, or return an illegal move, within this period will have a random move made for them. The agent that achieves the highest average win-rate across all games will win the competition.
 - 20 games will be selected by the competition organisers, and not revealed to any participants.
