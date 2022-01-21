@@ -47,6 +47,8 @@ Three tracks are proposed:
 - General Game Playing (GGP): Competiton on games present or not in our library.
 - Learning: A set of games are announced months before the actual competition, the agents are invited to learn before to compete.
 
+A track is going to run if at least 3 participants takes part of it.
+
 ## Competition Prizes
 - This year, a total price of **9,900 euros** for the three tracks is funded by the PaRis Artificial Intelligence Research InstitutE (PR[AI]RIE: https://prairie-institute.fr/) thanks to Tristan Cazenave (https://www.lamsade.dauphine.fr/~cazenave/).
 - For each track, the 1st Place will receive €3,000 and the 2nd place will receive €300. The winners of each track are also going to be invited to write a paper for the first Ludii/DLP conference (happening in 2023).
@@ -69,7 +71,7 @@ All agents should be implemented thanks to the Ludii Java AI API or the Ludii Py
 - A brief tutorial video of how to run an AI agent in Ludii is available at https://www.youtube.com/watch?v=8MhBMEXO8IU (ERIC: TO REDO AND UPDATE)
 
 ## Important Dates
-- February/March 2022: Learning track games will be announced over Feb and March.
+- February/March 2022: Learning track games will be announced over February and March.
 - February-July 2022: Possibility to run agents on the killothon track.
 - End of July 2022: CG/IJCAI at Vienna, Run of the GGP track and the learning track + announcement of the results.
 
@@ -98,14 +100,26 @@ Whenever an agent is expected to make a move, it can:
 
 This API for agents is similar to that used by the planning tracks of the [General Video Game AI competitions](http://gvgai.net/) in past years.
 
-
 ## Competition Rules
 
 ### Killothon track
 
-### General Game Playing track
+The killothon is a new type of AI challenge in which the participants are not competeting directly against each other but trying to win the maximum of games against a simple UCT (Upper Confidence Tree) agent using 1 second of thinking time per move. All challengers are representing the role of the player 1, the UCT agent is representing the role of the player 2 and if the game has more than 2 players, all the other roles are played randomly.
+For each play, only one minute of ("smart") thinking time is allocated to the challenger and to UCT. After this time, the agent is playing randomly until the end of the game.
+
+On this track, all the games in Ludii following the requirement of (#competition-games) are used (1,058 games on version 3.1.0).
+
+To run the killothon, the participants requiere to implement a main method in their code calling the following method **KillothonCLI.main(final String[] args);** with as arguments:
+- login
+- agent name
+
+The name of the agent would have to
+
+### General Game Playing (GGP) track
 
 ### Learning track
+
+This track is following exactly the same rules of the GGP except the games are going to be revealed during the months of February and March. This allows the participants to prepare the competition in (for example) making their agent learning more about these games before the competition. On the 20 games provided during these months, only 6 are going to be used for the actual competition. These games are all selected by the organisers of the competition.
 
 <!--
 will play against all other competition entrants on a selected set of 20 games in a round-robin format. These games will not be named or provided to the agents beforehand. Agents will have a set amount of time, typically a few seconds, to make each move. Agents that fail to return a move, or return an illegal move, within this period will have a random move made for them. The agent that achieves the highest average win-rate across all games will win the competition.
