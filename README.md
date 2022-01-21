@@ -8,7 +8,7 @@
 ## News
 - 1 February 2022: This repository made public.
 
-To stay up-to-date with any new announcements about Ludii or the Ludii AI competition, keep an eye out on:
+To stay up-to-date with any new announcements about Ludii or the Ludii AI competitions, keep an eye out on:
 1. Our twitter: https://twitter.com/ludiigames
 2. Our forums: https://ludii.games/forums/forumdisplay.php?fid=26
 
@@ -42,7 +42,22 @@ that will be used for the competition at CoG 2020 at 0.9.3**.
 ---
 
 ## Summary
-The Ludii AI Competitions are **general game playing competitions** focussed on developing agents that can play a wide variety of board, dice and tile games. This competition will use Ludii, a recently developed general game system, to provide the necessary games and API. Games will be provided in the Ludii .lud game description format. The current version of Ludii includes over 500 games, with new games being added frequently. Submitted agents will play against all other competition entrants on a selected set of 20 games in a round-robin format. These games will not be named or provided to the agents beforehand. Agents will have a set amount of time, typically a few seconds, to make each move. Agents that fail to return a move, or return an illegal move, within this period will have a random move made for them. The agent that achieves the highest average win-rate across all games will win the competition.
+The Ludii AI Competitions are **general game playing competitions** focussed on developing agents that can play a wide variety of board, dice and tile games. These competitions will use Ludii, a general game system, to provide the necessary games and API. Games will be provided in the Ludii .lud game description format. The current version (1.3.1) of Ludii includes over 1,000 games, with new games being added frequently. 
+
+Three tracks are proposed:
+- Killothon: Best utility obtained on more than 1,000 games against UCT.
+- General Game Playing: Competiton on new games not present in the library.
+- Learning: A set of games are announced months before the actual competition, the agents are invited to learn before to compete.
+
+## Competition Prizes
+- This year, a total price of **9,900 euros** for the three tracks is funded by the PaRis Artificial Intelligence Research InstitutE (PR[AI]RIE: https://prairie-institute.fr/) thanks to Tristan Cazenave (https://www.lamsade.dauphine.fr/~cazenave/).
+- For each track, the 1st Place will receive €3,000 and the 2nd place will receive €300.
+- Each entrant can enter all three events, but only one agent per event.
+
+FROM HERE
+
+
+Submitted agents will play against all other competition entrants on a selected set of 20 games in a round-robin format. These games will not be named or provided to the agents beforehand. Agents will have a set amount of time, typically a few seconds, to make each move. Agents that fail to return a move, or return an illegal move, within this period will have a random move made for them. The agent that achieves the highest average win-rate across all games will win the competition.
 
 A brief tutorial video of how to run an AI agent in Ludii is available at https://www.youtube.com/watch?v=8MhBMEXO8IU
 
@@ -113,11 +128,7 @@ To submit an agent, send an email to ludii.games@gmail.com containing:
 - Entries are permitted to write files to their current working directory, but these will not be preserved between match-ups (i.e. no learning from game-to-game).
 - We will enforce a turn limit, after which matchups are declared a draw, to avoid infinitely-long matchups. This limit will be sufficiently high that it shouldn't be reached by "reasonable" play. The forward model provided to agents will be aware of this limit, which means that forward planning agents will automatically be aware of the existence of this limit without requiring any extra implementation effort for entrants.
 
-## Competition Prizes
-- The IEEE CIS Competition Subcommittee has provided $1000USD in prize money.
-- 1st Place will receive $500, 2nd place will receive $300, and 3rd place will receive $200.
-- Each entrant may only win a single prize, and must outperform a baseline UCT agent.
-- The full prize  distribution policy can be found at https://cis.ieee.org/images/files/Documents/competitions/prize-dist-policy.pdf
+
 
 ## Contact Info
 The preferred way to contact us with any suggestions or questions about the competition is to use the section for competitions on the Ludii forums (https://ludii.games/forums/forumdisplay.php?fid=26). This also enables other interested people to see the responses.
