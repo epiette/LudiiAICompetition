@@ -5,9 +5,8 @@
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 [![twitter](https://img.shields.io/twitter/follow/ludiigames?style=social)](https://twitter.com/intent/follow?screen_name=ludiigames)
 
-## News
-- 1 February 2022: This repository made public.
 
+## News
 To stay up-to-date with any new announcements about Ludii or the Ludii AI competitions, keep an eye out on:
 1. Our twitter: https://twitter.com/ludiigames
 2. Our forums: https://ludii.games/forums/forumdisplay.php?fid=26
