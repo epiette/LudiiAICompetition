@@ -60,6 +60,8 @@ To participate to any of the tracks, it is necessary to send us an email to ludi
 On all tracks, agents are going to be run on your own machine. That's why, it would also really be appreciated that you are sharing the configuration used to run your agent.
 All agents should be implemented thanks to the Ludii Java AI API or the Ludii Python AI API (however if a participant is able to implement a wrapper to Ludii in any other languages, this is also allowed.). We also encourage entrants (especially winners) to make their source code available after the competition or to share it (privately) with us (this is not a requirement). We will not share this source code with third parties, but do encourage entrants to open-source their entries if possible!
 
+Entrants can not just use direct copies of the open source Ludii AIs! If they use Ludii AIs as a basis, an abstract description of the agent should be provided and should describe how is different to Ludii AI.
+
 ## Important Links
 - Main Ludii website: https://ludii.games/
 - Ludii competition repository: https://github.com/Ludeme/LudiiAICompetition
@@ -104,10 +106,13 @@ This API for agents is similar to that used by the planning tracks of the [Gener
 
 ### Killothon track
 
-The killothon is a new type of AI challenge in which the participants are not competeting directly against each other but trying to win the maximum of games against a simple UCT (Upper Confidence Tree) agent using 1 second of thinking time per move. All challengers are representing the role of the player 1, the UCT agent is representing the role of the player 2 and if the game has more than 2 players, all the other roles are played randomly.
-For each play, only one minute of ("smart") thinking time is allocated to the challenger. After this time, the agent is playing randomly until the end of the game. The same rule is applied to UCT.
+The killothon is a new type of AI challenge in which the participants are not competeting directly against each other but trying to win the maximum of games against a simple UCT (Upper Confidence Tree) agent. All challengers are representing the role of the player 1, the UCT agent is representing the role of the player 2 and if the game has more than 2 players, all the other roles are played randomly.
+For each play, only one minute of ("smart") thinking time is allocated to the challenger. After this time, the agent is playing randomly until the end of the game. The participants can distribute this minute of thinking time as they wish to their agents.
+The same rule is applied to UCT and during this minute, 1 second of thinking time per move is used.
 
 On this track, all the games in Ludii following the requirement of (#competition-games) are used (1,058 games on version 3.1.0).
+
+In the rare case of an equality between 2 agents, the tiebreak is to compare the total number of decision moves made by the agents.
 
 To run the killothon, the participants requiere to implement a main method in their code calling the following method **KillothonCLI.main(final String[] args);** with as arguments:
 - login
@@ -125,27 +130,17 @@ All the results of the killothon would also be available to you in a csv next to
 
 ### General Game Playing (GGP) track
 
-<TODO>
+During the GGP track, all participants will play against 4 other competition entrants (selecting randomly on all the other participants) on a selected set of 6 two-players games in a round-robin format (playing each role once). These games will not be named or provided to the agents beforehand. Each agent will have 30 minutes of thinking for the full game, this time can be allocated as wished. If the full time is used but the game is still not over, this participant will automatically lose the match. The agent that achieves the highest average win-rate across all games will win the competition. The win-rate for each agent across all matchups that it plays will determine its final ranking. Draws count as half a win for each of the two players.
+  
+All the matches will have to be played thanks to the remote mode of Ludii (requiring to register on the forum, to get a login to connect yourself to the remote mode of Ludii).
+  
+On this track, all the two-players games in Ludii following the requirement of (#competition-games) can be used.  
+  
+Note: Depending on the number of submissions we receive, the number of games played could be changed. 
   
 ### Learning track
 
 This track is following exactly the same rules of the GGP except the games are going to be revealed during the months of February and March. This allows the participants to prepare the competition in (for example) making their agent learning more about these games before the competition. On the 20 games provided during these months, only 6 are going to be used for the actual competition. These games are all selected by the organisers of the competition.
-
-<!--
-will play against all other competition entrants on a selected set of 20 games in a round-robin format. These games will not be named or provided to the agents beforehand. Agents will have a set amount of time, typically a few seconds, to make each move. Agents that fail to return a move, or return an illegal move, within this period will have a random move made for them. The agent that achieves the highest average win-rate across all games will win the competition.
-- 20 games will be selected by the competition organisers, and not revealed to any participants.
-- Submitted agents will be required to play each of these games against every other agent, as both the first and second player. This means that every entry will play 40 * (N - 1) matchups, where N denotes the number of submitted entries. Depending on the number of submissions we receive, this process may be run multiple times to give a more robust result.
-- The win-rate for each agent across all matchups that it plays will determine its final ranking. Draws count as half a win for each of the two players.
-- For each of the 20 games, the competition organisers will pick an amount of thinking time between 1 and 5 seconds. All entries in all matchups using this game are allowed to use this many seconds per move. Agents that fail to return a move, or return an illegal move, within this period will have a random move made for them. 
-- Agents will have 300 seconds (five minutes) to initialise themselves between when a new game starts, and when they must make their first move (setup time).
-- The process running your agent will have 3GB RAM available. GPUs will NOT be available.
-- All entries must function on Linux.
-- Entries are permitted to write files to their current working directory, but these will not be preserved between match-ups (i.e. no learning from game-to-game).
-- We will enforce a turn limit, after which matchups are declared a draw, to avoid infinitely-long matchups. This limit will be sufficiently high that it shouldn't be reached by "reasonable" play. The forward model provided to agents will be aware of this limit, which means that forward planning agents will automatically be aware of the existence of this limit without requiring any extra implementation effort for entrants.
-
--->
-
-
 
 ## Contact Info
 The preferred way to contact us with any suggestions or questions about the competition is to use the section for competitions on the Ludii forums (https://ludii.games/forums/forumdisplay.php?fid=26). This also enables other interested people to see the responses.
