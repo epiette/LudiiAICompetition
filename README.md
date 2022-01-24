@@ -48,13 +48,19 @@ Three tracks are proposed:
 
 A track is going to run if at least 3 participants takes part of it.
 
+
+
+
 ## Competition Prizes
 - This year, a total price of **9,900 euros** for the three tracks is funded by the PaRis Artificial Intelligence Research InstitutE (PR[AI]RIE: https://prairie-institute.fr/) thanks to Tristan Cazenave (https://www.lamsade.dauphine.fr/~cazenave/).
 - For each track, the 1st place will receive €3,000 and the 2nd place will receive €300. The winners of each track are also going to be invited to write a paper for the first Ludii/DLP conference (happening in 2023).
 - Each entrant can enter all three events, but only one agent per event.
 
+
+
+
 ## Participation
-To participate to any of the tracks, it is necessary to send us an email to ludii.games@gmail.com to register. The only necessary information are your first and last name, the name of your agent and an email to contact you. It would also really be appreciated if you can register to the Ludii forum and give us your login, but this is not required (https://ludii.games/forums/member.php?action=register). As soon as it would be possible for you, a short description (an abstract) of your agent would also be appreciated if shared with us.**
+To participate to any of the tracks, it is necessary to send us an email to ludii.games@gmail.com to register. The only necessary information are your first and last name, the name of your agent and an email to contact you. It would also really be appreciated if you can register to the Ludii forum and give us your login, but this is not required (https://ludii.games/forums/member.php?action=register). As soon as it would be possible for you, a short description (an abstract) of your agent would also be appreciated if shared with us.
 
 On all tracks, agents are going to be run on your own machine. That's why, it would also really be appreciated that you are sharing the configuration used to run your agent.
 All agents should be implemented thanks to the Ludii Java AI API or the Ludii Python AI API (however if a participant is able to implement a wrapper to Ludii in any other languages, this is also allowed.). We also encourage entrants (especially winners) to make their source code available after the competition or to share it (privately) with us (this is not a requirement). We will not share this source code with third parties, but do encourage entrants to open-source their entries if possible!
