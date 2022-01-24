@@ -11,20 +11,6 @@ To stay up-to-date with any new announcements about Ludii or the Ludii AI compet
 1. Our twitter: https://twitter.com/ludiigames
 2. Our forums: https://ludii.games/forums/forumdisplay.php?fid=26
 
-<!--
----
-
-## The CoG 2022 Competition will use Ludii Version 1.3.2
-
-This repository, as well as the [Ludii Example AI repository](https://github.com/Ludeme/LudiiExampleAI),
-are written for the latest public pre-release of Ludii available at the time of this writing: **Ludii 0.9.3**.
-**This is the version of Ludii that we will use for the AI competition at CoG 2020**. We do plan to release
-newer versions of Ludii in between, but the API may not remain 100% the same. Therefore **we now fix the version
-that will be used for the competition at CoG 2020 at 0.9.3**.
--->
-
-
-
 ---
 
 ## Table of Contents
@@ -47,9 +33,9 @@ The Ludii AI Competitions are **general game playing competitions** focussed on 
 Three tracks are proposed:
 - Killothon: Best utility obtained on more than 1,000 games against UCT.
 - General Game Playing (GGP): Competiton on games present or not in our library.
-- Learning: A set of games are announced months before the actual competition, the agents are invited to learn before to compete.
+- Learning: A set of games are announced months before the actual competition, the agents are invited to learn before competing.
 
-A track is going to run if at least 3 participants takes part of it.
+A track is going to run if at least 3 participants take part in it.
 
 
 
@@ -63,12 +49,12 @@ A track is going to run if at least 3 participants takes part of it.
 
 
 ## Participation
-To participate to any of the tracks, it is necessary to send us an email to ludii.games@gmail.com to register. The only necessary information are your first and last name, the name of your agent and an email to contact you. It would also really be appreciated if you can register to the Ludii forum and give us your login, but this is not required (https://ludii.games/forums/member.php?action=register). As soon as it would be possible for you, a short description (an abstract) of your agent would also be appreciated if shared with us.
+To participate in any of the tracks, it is necessary to send us an email to ludii.games@gmail.com to register. The required information is your first and last name, the name of your agent and an email to contact you. It would also really be appreciated if you can register to the Ludii forum and give us your login, but this is not required (https://ludii.games/forums/member.php?action=register). As soon as it would be possible for you, a short description (an abstract) of your agent would also be appreciated if shared with us.
 
-On all tracks, agents are going to be run on your own machine. That's why, it would also really be appreciated that you are sharing the configuration used to run your agent.
-All agents should be implemented thanks to the Ludii Java AI API or the Ludii Python AI API (however if a participant is able to implement a wrapper to Ludii in any other languages, this is also allowed.). We also encourage entrants (especially winners) to make their source code available after the competition or to share it (privately) with us (this is not a requirement). We will not share this source code with third parties, but do encourage entrants to open-source their entries if possible!
+On all tracks, agents are going to be run on your own machine. That's why it would also really be appreciated if you are sharing the configuration used to run your agent.
+All agents should be implemented thanks to the Ludii Java AI API or the Ludii Python AI API (however if a participant can implement a wrapper to Ludii in any other languages, this is also allowed.). We also encourage entrants (especially winners) to make their source code available after the competition or to share it (privately) with us (this is not a requirement). We will not share this source code with third parties, but do encourage entrants to open-source their entries if possible!
 
-Entrants can not just use direct copies of the open source Ludii AIs! If they use Ludii AIs as a basis, an abstract description of the agent should be provided and should describe how is different to Ludii AI.
+Entrants can not just use direct copies of the open-source Ludii AIs! If they use Ludii AIs as a basis, an abstract description of the agent should be provided and should describe how is different to Ludii AI.
 
 
 
@@ -110,7 +96,7 @@ For the CG 2022 edition of the Ludii AI competitions, all games will be guarante
 
 
 ## Implementing Agents
-All agents are expected to extend the “AI” abstract class provided by Ludii. At this point in time, this means that agents are expected to be implemented in Java. We also provide a [Ludii Python AI repository](https://github.com/Ludeme/LudiiPythonAI) which shows how a simple Java wrapper to implement this class can be used around a Python-based AI implementation.
+All agents are expected to extend the “AI” abstract class provided by Ludii. This means that agents are expected to be implemented in Java. We also provide a [Ludii Python AI repository](https://github.com/Ludeme/LudiiPythonAI) which shows how a simple Java wrapper to implement this class can be used around a Python-based AI implementation.
 
 During the competition, agents will have access to a “Forward Model” of the game they are playing at that time. They will have access to the “Game” object (containing e.g. the rules of the game), and they will be told which role they are expected to play (i.e. Player 1 or Player 2).
 
@@ -129,22 +115,22 @@ Whenever an agent is expected to make a move, it can:
 
 ### Killothon track
 
-The killothon is a new type of AI challenge in which the participants are not competeting directly against each other but trying to win the maximum of games against a simple UCT (Upper Confidence Tree) agent. 
+The killothon is a new type of AI challenge in which the participants are not competing directly against each other but trying to win the maximum of games against a simple UCT (Upper Confidence Tree) agent. 
 
 For each play, only one minute of ("smart") thinking time is allocated to the challenger. After this time, the agent is playing randomly until the end of the game. The participants can distribute this minute of thinking time as they wish to their agents.
 The same rule is applied to UCT and during this minute, 1 second of thinking time per move is used.
 
-All challengers are representing the role of the player 1, the UCT agent is representing the role of the player 2 and if the game has more than 2 players, all the other roles are played randomly.
+All challengers are representing the role of player 1, the UCT agent is representing the role of player 2 and if the game has more than 2 players, all the other roles are played randomly.
 
 On this track, all the games in Ludii following the requirement of (#competition-games) are used (1,058 games on version 3.1.0).
 
-In the rare case of an equality between 2 agents, the tiebreak is to compare the total number of decision moves made by the agents.
+In the rare case of equality between 2 agents, the tiebreak is to compare the total number of decision moves made by the agents.
 
-To run the killothon, the participants requiere to implement a main method in their code calling the following method **KillothonCLI.main(final String[] args);** with as arguments:
+To run the killothon, the participants are required  to implement a main method in their code calling the following method **KillothonCLI.main(final String[] args);** with as arguments:
 - login
 - agent name
 
-The name of the agent would have to be the name of the agent implementing by the participant.
+The name of the agent would have to be the name of the agent implemented by the participant.
 Example: KillothonCLI.main(new String[]{"login", "AgentName"});
 
 For information about how to run a killothon from an agent made with the Java API, check this video: <TODO>
@@ -152,7 +138,7 @@ For information about how to run a killothon from an agent made with the Java AP
 When a game is over during the killothon, the rank of P1 and its obtained utility (between -1 and 1) are stored. And when all the games are over, all the results of the challenger (P1) are sent by mail to us and the sentence "Mail successfully sent! Congratulations to have played a complete killothon!" is printed in the terminal.
 All the results of the killothon would also be available to you in a csv next to the jar run.
   
-  **<b>Be careful</b>, a full killothon is taking close to a day to play all the games and to send the results to us, do not stop the killothon before to see this sentence printed in your terminal. Moreover, because the results are sent to us by mail, an internet connection is requiere during a killothon. **
+  **<b>Be careful</b>, a full killothon is taking close to a day to play all the games and to send the results to us, do not stop the killothon before seeing this sentence printed in your terminal. Moreover, because the results are sent to us by mail, an internet connection is required during a killothon. **
 
   
   
@@ -164,8 +150,8 @@ During the GGP track, all participants will play against 4 other competition ent
   
 Each agent will have 30 minutes of thinking for the full game, this time can be allocated as wished. If the full time is used but the game is still not over, this participant will automatically lose the match. The agent that achieves the highest average win-rate across all games will win the competition. The win-rate for each agent across all matchups that it plays will determine its final ranking. Draws count as half a win for each of the two players.
   
-All the matches will have to be played thanks to the remote mode of Ludii (requiring to register on the forum, to get a login to connect yourself to the remote mode of Ludii).
-All the matches will be played during the CG/IJCAI conference (23-29 July). The different matches will be announced each morning by the organizing team and the matches run during the day. All agents are requiere to stay online during the competition in order to be able to run the matches with their allocated opponents. 
+All the matches will have to be played thanks to the remote mode of Ludii (requiring the participant to register on the forum, to get a login to connect yourself to the remote mode of Ludii).
+All the matches will be played during the CG/IJCAI conference (23-29 July). The different matches will be announced each morning by the organizing team and the matches run during the day. All agents are required to stay online during the competition to be able to run the matches with their allocated opponents. 
   
 On this track, all the two-players games in Ludii following the requirement of (#competition-games) can be used.  
   
@@ -175,7 +161,7 @@ Note: Depending on the number of submissions we receive, the number of games pla
   
 ### Learning track
 
-This track is following exactly the same rules of the GGP except the games are going to be revealed during the months of February and March. This allows the participants to prepare the competition in (for example) making their agent learning more about these games before the competition. On the 20 games provided during these months, only 6 are going to be used for the actual competition. These games are all selected by the organisers of the competition.
+This track is following the same rules of the GGP except the games are going to be revealed during February and March. This allows the participants to prepare for the competition in (for example) making their agent learn more about these games before the competition. On the 20 games provided during these months, only 6 are going to be used for the actual competition. These games are all selected by the organisers of the competition.
 
   
   
@@ -187,7 +173,7 @@ The preferred way to contact us with any suggestions or questions about the comp
 
 Alternatively, suggestions and questions may be emailed to: ludii.games@gmail.com 
 
-These competitions are running by the members of the Digital Ludeme Project (http://ludeme.eu/people/).
+These competitions are run by the members of the Digital Ludeme Project (http://ludeme.eu/people/).
 
   
   
@@ -195,6 +181,6 @@ These competitions are running by the members of the Digital Ludeme Project (htt
   
 ## Acknowledgements
 
-This repository is part of the European Research Council-funded Digital Ludeme Project (ERC Consolidator Grant \#771292), being run by Cameron Browne at Maastricht University's Department of Data Science and Knowledge Engineering. All prices are funded by the PaRis Artificial Intelligence Research InstitutE (PR[AI]RIE: https://prairie-institute.fr/) thanks to Tristan Cazenave (https://www.lamsade.dauphine.fr/~cazenave/).
+This repository is part of the European Research Council-funded Digital Ludeme Project (ERC Consolidator Grant \#771292), being run by Cameron Browne at Maastricht University's Department of Data Science and Knowledge Engineering. All prizes are funded by the PaRis Artificial Intelligence Research InstitutE (PR[AI]RIE: https://prairie-institute.fr/) thanks to Tristan Cazenave (https://www.lamsade.dauphine.fr/~cazenave/).
 
 <a href="https://erc.europa.eu/"><img src="./resources/LOGO_ERC-FLAG_EU_.jpg" title="Funded by the European Research Council" alt="European Research Council Logo" height="384"></a>
