@@ -22,6 +22,9 @@ are written for the latest public pre-release of Ludii available at the time of 
 newer versions of Ludii in between, but the API may not remain 100% the same. Therefore **we now fix the version
 that will be used for the competition at CoG 2020 at 0.9.3**.
 -->
+
+
+
 ---
 
 ## Table of Contents
@@ -67,6 +70,10 @@ All agents should be implemented thanks to the Ludii Java AI API or the Ludii Py
 
 Entrants can not just use direct copies of the open source Ludii AIs! If they use Ludii AIs as a basis, an abstract description of the agent should be provided and should describe how is different to Ludii AI.
 
+
+
+
+
 ## Important Links
 - Main Ludii website: https://ludii.games/
 - Ludii competition repository: https://github.com/Ludeme/LudiiAICompetition
@@ -77,10 +84,17 @@ Entrants can not just use direct copies of the open source Ludii AIs! If they us
 - Ludii source code repository: https://github.com/Ludeme/Ludii
 - A brief tutorial video of how to run an AI agent in Ludii is available at https://www.youtube.com/watch?v=8MhBMEXO8IU (ERIC: TO REDO AND UPDATE)
 
+
+
+
 ## Important Dates
 - February/March 2022: Learning track games will be announced over February and March.
 - February-July 2022: Possibility to run agents on the killothon track.
 - End of July 2022: CG/IJCAI at Vienna, Run of the GGP track and the learning track + announcement of the results.
+
+
+
+
 
 ## Competition Games
 The competition will use a set of games. These will all be implemented in Ludii’s .lud format, and run using Ludii. 
@@ -91,6 +105,9 @@ For the CG 2022 edition of the Ludii AI competitions, all games will be guarante
 - Turn-based
 - Sequential
 - Fully observable
+
+
+
 
 ## Implementing Agents
 All agents are expected to extend the “AI” abstract class provided by Ludii. At this point in time, this means that agents are expected to be implemented in Java. We also provide a [Ludii Python AI repository](https://github.com/Ludeme/LudiiPythonAI) which shows how a simple Java wrapper to implement this class can be used around a Python-based AI implementation.
@@ -106,6 +123,9 @@ Whenever an agent is expected to make a move, it can:
 - Return the move that it wishes to make.
 
 This API for agents is similar to that used by the planning tracks of the [General Video Game AI competitions](http://gvgai.net/) in past years.
+
+
+
 
 ## Competition Rules
 
@@ -133,6 +153,10 @@ All the results of the killothon would also be available to you in a csv next to
   
 **Be careful, a full killothon is taking close to a day to play all the games and to send the results to us, do not stop the killothon before to see this sentence printed in your terminal**
 
+  
+  
+  
+  
 ### General Game Playing (GGP) track
 
 During the GGP track, all participants will play against 4 other competition entrants (selecting randomly on all the other participants) on a selected set of 6 two-players games in a round-robin format (playing each role once). These games will not be named or provided to the agents beforehand. Each agent will have 30 minutes of thinking for the full game, this time can be allocated as wished. If the full time is used but the game is still not over, this participant will automatically lose the match. The agent that achieves the highest average win-rate across all games will win the competition. The win-rate for each agent across all matchups that it plays will determine its final ranking. Draws count as half a win for each of the two players.
@@ -143,10 +167,18 @@ On this track, all the two-players games in Ludii following the requirement of (
   
 Note: Depending on the number of submissions we receive, the number of games played could be changed. 
   
+  
+  
+  
 ### Learning track
 
 This track is following exactly the same rules of the GGP except the games are going to be revealed during the months of February and March. This allows the participants to prepare the competition in (for example) making their agent learning more about these games before the competition. On the 20 games provided during these months, only 6 are going to be used for the actual competition. These games are all selected by the organisers of the competition.
 
+  
+  
+  
+  
+  
 ## Contact Info
 The preferred way to contact us with any suggestions or questions about the competition is to use the section for competitions on the Ludii forums (https://ludii.games/forums/forumdisplay.php?fid=26). This also enables other interested people to see the responses.
 
@@ -154,6 +186,10 @@ Alternatively, suggestions and questions may be emailed to: ludii.games@gmail.co
 
 These competitions are running by the members of the Digital Ludeme Project (http://ludeme.eu/people/).
 
+  
+  
+  
+  
 ## Acknowledgements
 
 This repository is part of the European Research Council-funded Digital Ludeme Project (ERC Consolidator Grant \#771292), being run by Cameron Browne at Maastricht University's Department of Data Science and Knowledge Engineering. All prices are funded by the PaRis Artificial Intelligence Research InstitutE (PR[AI]RIE: https://prairie-institute.fr/) thanks to Tristan Cazenave (https://www.lamsade.dauphine.fr/~cazenave/).
