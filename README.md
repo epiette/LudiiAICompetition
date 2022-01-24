@@ -122,8 +122,6 @@ Whenever an agent is expected to make a move, it can:
 - Query any game state for information about that state -- such as the player to move in that state, whether or not it is already over (and what the outcome is), etc.
 - Return the move that it wishes to make.
 
-This API for agents is similar to that used by the planning tracks of the [General Video Game AI competitions](http://gvgai.net/) in past years.
-
 
 
 
