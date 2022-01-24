@@ -152,7 +152,7 @@ For information about how to run a killothon from an agent made with the Java AP
 When a game is over during the killothon, the rank of P1 and its obtained utility (between -1 and 1) are stored. And when all the games are over, all the results of the challenger (P1) are sent by mail to us and the sentence "Mail successfully sent! Congratulations to have played a complete killothon!" is printed in the terminal.
 All the results of the killothon would also be available to you in a csv next to the jar run.
   
-**Be careful, a full killothon is taking close to a day to play all the games and to send the results to us, do not stop the killothon before to see this sentence printed in your terminal. Moreover, because the results are sent to us by mail, an internet connection is requiere during a killothon. **
+***Be careful, a full killothon is taking close to a day to play all the games and to send the results to us, do not stop the killothon before to see this sentence printed in your terminal. Moreover, because the results are sent to us by mail, an internet connection is requiere during a killothon. ***
 
   
   
