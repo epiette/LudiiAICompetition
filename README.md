@@ -50,7 +50,7 @@ A track is going to run if at least 3 participants takes part of it.
 
 ## Competition Prizes
 - This year, a total price of **9,900 euros** for the three tracks is funded by the PaRis Artificial Intelligence Research InstitutE (PR[AI]RIE: https://prairie-institute.fr/) thanks to Tristan Cazenave (https://www.lamsade.dauphine.fr/~cazenave/).
-- For each track, the 1st Place will receive €3,000 and the 2nd place will receive €300. The winners of each track are also going to be invited to write a paper for the first Ludii/DLP conference (happening in 2023).
+- For each track, the 1st place will receive €3,000 and the 2nd place will receive €300. The winners of each track are also going to be invited to write a paper for the first Ludii/DLP conference (happening in 2023).
 - Each entrant can enter all three events, but only one agent per event.
 
 ## Participation
