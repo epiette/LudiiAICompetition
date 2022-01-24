@@ -129,9 +129,12 @@ Whenever an agent is expected to make a move, it can:
 
 ### Killothon track
 
-The killothon is a new type of AI challenge in which the participants are not competeting directly against each other but trying to win the maximum of games against a simple UCT (Upper Confidence Tree) agent. All challengers are representing the role of the player 1, the UCT agent is representing the role of the player 2 and if the game has more than 2 players, all the other roles are played randomly.
+The killothon is a new type of AI challenge in which the participants are not competeting directly against each other but trying to win the maximum of games against a simple UCT (Upper Confidence Tree) agent. 
+
 For each play, only one minute of ("smart") thinking time is allocated to the challenger. After this time, the agent is playing randomly until the end of the game. The participants can distribute this minute of thinking time as they wish to their agents.
 The same rule is applied to UCT and during this minute, 1 second of thinking time per move is used.
+
+All challengers are representing the role of the player 1, the UCT agent is representing the role of the player 2 and if the game has more than 2 players, all the other roles are played randomly.
 
 On this track, all the games in Ludii following the requirement of (#competition-games) are used (1,058 games on version 3.1.0).
 
@@ -149,7 +152,7 @@ For information about how to run a killothon from an agent made with the Java AP
 When a game is over during the killothon, the rank of P1 and its obtained utility (between -1 and 1) are stored. And when all the games are over, all the results of the challenger (P1) are sent by mail to us and the sentence "Mail successfully sent! Congratulations to have played a complete killothon!" is printed in the terminal.
 All the results of the killothon would also be available to you in a csv next to the jar run.
   
-**Be careful, a full killothon is taking close to a day to play all the games and to send the results to us, do not stop the killothon before to see this sentence printed in your terminal**
+**Be careful, a full killothon is taking close to a day to play all the games and to send the results to us, do not stop the killothon before to see this sentence printed in your terminal. Moreover, because the results are sent to us by mail, an internet connection is requiere during a killothon. **
 
   
   
