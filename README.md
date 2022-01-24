@@ -31,7 +31,7 @@ To stay up-to-date with any new announcements about Ludii or the Ludii AI compet
 The Ludii AI Competitions are **general game playing competitions** focussed on developing agents that can play a wide variety of board, dice and tile games. These competitions will use Ludii, a general game system, to provide the necessary games and API. Games will be provided in the Ludii .lud game description format. The current version (1.3.1) of Ludii includes over 1,000 games, with new games being added frequently. 
 
 Three tracks are proposed:
-- Killothon: Best utility obtained on more than 1,000 games against UCT.
+- Kilothon: Best utility obtained on more than 1,000 games against UCT.
 - General Game Playing (GGP): Competiton on games present or not in our library.
 - Learning: A set of games are announced months before the actual competition, the agents are invited to learn before competing.
 
@@ -75,7 +75,7 @@ Entrants can not just use direct copies of the open-source Ludii AIs! If they us
 
 ## Important Dates
 - February/March 2022: Learning track games will be announced over February and March.
-- February-July 2022: Possibility to run agents on the killothon track.
+- February-July 2022: Possibility to run agents on the kilothon track.
 - End of July 2022: CG/IJCAI at Vienna, Run of the GGP track and the learning track + announcement of the results.
 
 
@@ -113,9 +113,9 @@ Whenever an agent is expected to make a move, it can:
 
 ## Competition Rules
 
-### Killothon track
+### Kilothon track
 
-The killothon is a new type of AI challenge in which the participants are not competing directly against each other but trying to win the maximum of games against a simple UCT (Upper Confidence Tree) agent. 
+The kilothon is a new type of AI challenge in which the participants are not competing directly against each other but trying to win the maximum of games against a simple UCT (Upper Confidence Tree) agent. 
 
 For each play, only one minute of ("smart") thinking time is allocated to the challenger. After this time, the agent is playing randomly until the end of the game. The participants can distribute this minute of thinking time as they wish to their agents.
 The same rule is applied to UCT and during this minute, 1 second of thinking time per move is used.
@@ -126,19 +126,19 @@ On this track, all the games in Ludii following the requirement of (#competition
 
 In the rare case of equality between 2 agents, the tiebreak is to compare the total number of decision moves made by the agents.
 
-To run the killothon, the participants are required  to implement a main method in their code calling the following method **KillothonCLI.main(final String[] args);** with as arguments:
+To run the kilothon, the participants are required  to implement a main method in their code calling the following method **Kilothon.main(final String[] args);** with as arguments:
 - login
 - agent name
 
 The name of the agent would have to be the name of the agent implemented by the participant.
-Example: KillothonCLI.main(new String[]{"login", "AgentName"});
+Example: Kilothon.main(new String[]{"login", "AgentName"});
 
-For information about how to run a killothon from an agent made with the Java API, check this video: <TODO>
+For information about how to run a kilothon from an agent made with the Java API, check this video: <TODO>
   
-When a game is over during the killothon, the rank of P1 and its obtained utility (between -1 and 1) are stored. And when all the games are over, all the results of the challenger (P1) are sent by mail to us and the sentence "Mail successfully sent! Congratulations to have played a complete killothon!" is printed in the terminal.
-All the results of the killothon would also be available to you in a csv next to the jar run.
+When a game is over during the kilothon, the rank of P1 and its obtained utility (between -1 and 1) are stored. And when all the games are over, all the results of the challenger (P1) are sent by mail to us and the sentence "Mail successfully sent! Congratulations to have played a complete kilothon!" is printed in the terminal.
+All the results of the kilothon would also be available to you in a csv next to the jar run.
   
-  **<b>Be careful</b>, a full killothon is taking close to a day to play all the games and to send the results to us, do not stop the killothon before seeing this sentence printed in your terminal. Moreover, because the results are sent to us by mail, an internet connection is required during a killothon. **
+  **<b>Be careful</b>, a full kilothon is taking close to a day to play all the games and to send the results to us, do not stop the kilothon before seeing this sentence printed in your terminal. Moreover, because the results are sent to us by mail, an internet connection is required during a kilothon. **
 
   
   
